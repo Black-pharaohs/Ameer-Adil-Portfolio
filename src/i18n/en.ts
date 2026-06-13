@@ -4,7 +4,7 @@ export const en = {
     about: "About",
     skills: "Skills",
     certifications: "Certifications",
-    projects: "Projects",
+    projects: "Services",
     contact: "Contact",
     lang: "عربي"
   },
@@ -53,15 +53,16 @@ export const en = {
     ]
   },
   projects: {
-    title: "My Projects",
-    desc: "A selected set of software projects I developed to provide real technical solutions.",
+    title: "My Services",
+    desc: "A selection of technical services I offer to meet the needs of businesses and individuals effectively and professionally.",
     list: [
-      { title: "Corporate CMS", desc: "An integrated platform built with Laravel to facilitate managing and publishing articles and products, equipped with an advanced dashboard.", tags: ["Laravel", "PHP", "MySQL", "Tailwind CSS"] },
-      { title: "E-commerce API", desc: "A powerful backend system using Django to build E-commerce services, supporting advanced authentication and payment processes.", tags: ["Django", "Python", "PostgreSQL", "REST API"] },
-      { title: "Interactive Data Analytics Platform", desc: "A web application that displays live data analytics using Flask to generate visual reports serving decision-makers.", tags: ["Flask", "Python", "JavaScript", "Chart.js"] }
+      { title: "CRM System for Startups and Educational Centers", desc: "I customize CRM software using options like HubSpot, Salesforce, Odoo, or customized CRM, then integrate it with Facebook and TikTok platforms to manage marketing campaigns and deals highly professionally.", tags: ["HubSpot", "Salesforce", "Odoo", "CRM"] },
+      { title: "Data Analytics and Decision Making Platform", desc: "I customize an AI-based analytics program using technologies like Python, Power BI, Tableau, or Looker Studio.", tags: ["Python", "Power BI", "Tableau", "Looker Studio"] },
+      { title: "Your Complete E-commerce Store", desc: "I create a complete e-commerce store using ready-made service platforms like EasyOrder, Shopify, WordPress, or customize using an appropriate programming framework.", tags: ["Shopify", "WordPress", "E-commerce"] }
     ],
     source: "Source Code",
-    preview: "Preview"
+    preview: "Preview",
+    request: "Request Service"
   },
   contact: {
     title: "Let's Get in Touch",

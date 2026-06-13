@@ -1,13 +1,14 @@
 import { motion } from 'motion/react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useI18n } from '../i18n';
 
 export default function Projects() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
+  const IconArrow = lang === 'ar' ? ArrowLeft : ArrowRight;
   const images = [
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
   ];
 
   return (
@@ -52,15 +53,11 @@ export default function Projects() {
                     ))}
                   </div>
                 )}
-                <div className="flex justify-between items-center pt-4 border-t border-gray-50">
-                  <button className="text-gray-500 hover:text-indigo-600 flex items-center gap-1 text-sm font-medium transition-colors">
-                    <Github className="w-4 h-4" />
-                    <span>{t.projects.source}</span>
-                  </button>
-                  <button className="text-gray-500 hover:text-indigo-600 flex items-center gap-1 text-sm font-medium transition-colors">
-                    <ExternalLink className="w-4 h-4" />
-                    <span>{t.projects.preview}</span>
-                  </button>
+                <div className="pt-4 border-t border-gray-50">
+                  <a href="#contact" className="text-indigo-600 hover:text-indigo-700 flex items-center gap-2 text-sm font-bold transition-colors">
+                    <span>{t.projects.request}</span>
+                    <IconArrow className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </motion.div>
